@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header, main, section, div, ul, li {
+    border: 1px solid white;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left{ 
+    display: flex;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.61);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+
+}
+
+section ul{
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+section ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    
+}
+section ul li a{
+    text-decoration: none; 
+    color: white;   
+}
+section ul li a img{
+    width: 30px;    
+}
+.right{
+    width: 85vw;
+}
