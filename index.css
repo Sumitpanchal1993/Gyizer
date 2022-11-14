@@ -1,52 +1,360 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: black;
-    color: white;
+body {
+  background-color: #141416;
+  color: white;
 }
 
-/* header, main, section, div, ul, li {
-    border: 1px solid white;
+main {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.left {
+  display: flex;
+  margin: 10px;
+  background-color: #141416;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* width: auto; */
+}
+
+/* #myLink{
+  display: block;
 } */
-
-main{
-    display: flex;
-    flex-wrap: wrap;
+ul{
+  display: block;
+}
+#hamburg {
+  display: none;
 }
 
-.left{ 
-    display: flex;
+section ul {
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+section ul li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+section ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section ul li a img {
+  width: 30px;
+}
+
+@media (max-width: 1000px) {
+  /* #myLink{
+    display: none;
+  } */
+  ul{
+    display: none;
+  }
+
+
+  #hamburg {
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.61);
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: auto;
+    display: block;
+    position: relative;
+  }
 
+  .left {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  /* top */
+  .toplhs{
+    display: none;
+  }
+  
 }
 
-section ul{
-    margin: 5px;
-    justify-content: center;
-    align-items: center;
+.right {
+  width: 85vw;
 }
 
-section ul li{
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
-section ul li a{
-    text-decoration: none; 
-    color: white;   
+
+/* topbar css */
+.top {
+  margin: 10px 0 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-section ul li a img{
-    width: 30px;    
+
+.toplhs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.right{
-    width: 85vw;
+
+#toplogo1 {
+  position: absolute;
+  margin: 20px;
+  width: 50px;
+}
+
+#toplogo2 {
+  width: 90px;
+}
+
+#toprhslogo1 {
+  /* width: 30px; */
+}
+
+#toprhslogo2 {
+  width: 25px;
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+.toprhs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toprhs>div {
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+
+
+
+
+/* Card1 css */
+.card1 {
+  background-color: #23262F;
+  display: flex;
+  padding: 24px 39px;
+  border-radius: 34px;
+  width: fit-content;
+  box-shadow: -10px 48.5967px 140px rgba(126, 123, 160, 0.2);
+  backdrop-filter: blur(9.5px);
+}
+
+.card11 {
+  display: flex;
+  margin: 75px 0;
+  padding: 5px;
+}
+
+.card11>img {
+  width: 80px;
+}
+
+.card111 {
+  width: 135px;
+  margin-left: 20px;
+}
+
+.card111>h1 {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FCFCFD;
+}
+
+.card111>p {
+  position: absolute;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #777E90;
+}
+
+.card12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card1_img2 {
+  margin-left: 20px;
+}
+
+#card1_img3 {
+  position: absolute;
+  margin-left: 20px;
+}
+
+/* Card2 css */
+.card2 {
+  z-index: -1;
+  background-color: #23262F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 25px;
+  height: auto;
+  border-radius: 34px;
+  box-shadow: -10px 48.5967px 140px rgba(126, 123, 160, 0.2);
+  backdrop-filter: blur(9.5px);
+  margin: 0 0 0 25px;
+
+  width: 500px;
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.card21 {
+  font-family: sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card22 {
+  display: flex;
+  font-family: sans-serif;
+  margin: 10px;
+  padding: 20px 0;
+}
+
+.card22logo {
+  margin: 8px 0 8px 0;
+}
+
+.card22graph {
+  margin: 0 0 0 20px;
+  height: 100px;
+}
+
+.rate {
+  margin: 5px;
+  background: linear-gradient(16.42deg, rgba(69, 175, 238, 0.0001) -14.24%, rgba(67, 177, 236, 0.615533) -9.28%, rgba(65, 179, 233, 0.767526) -3.61%, #3EB7E5 30.91%, #23DBBD 84.43%, rgba(30, 224, 183, 0.852977) 96.89%, rgba(28, 228, 179, 0.768733) 104.03%, rgba(27, 229, 177, 0.144475) 108.17%, rgba(23, 234, 172, 0.0001) 117.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.rate2 {
+  margin: 5px;
+}
+
+/* Card3 css */
+.card3 {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  /* left: calc(50% - 433px/2 - 368.5px); */
+  /* top: calc(50% - 293px/2 + 268px); */
+  background: #23262F;
+  box-shadow: -10px 48.5967px 140px rgba(126, 123, 160, 0.2);
+  backdrop-filter: blur(9.5px);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 34px;
+  margin-top: 20px;
+  padding: 0 0 0 30px;
+}
+
+.base {
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 525px;
+  height: 327px;
+  align-items: center;
+  justify-content: left;
+}
+
+.card31 {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  padding: 10px;
+}
+
+.card311 {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  width: 240px;
+  height: 0.5fr;
+}
+
+.card3111 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.card3111>h1 {
+  /* position: absolute; */
+  /* height: 24px; */
+  /* left: 16.62%;
+  right: 77.2%;
+  top: calc(50% - 24px/2 + 197.31px); */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* line-height: 24px; */
+  /* identical to box height, or 120% */
+  /* Color white text */
+  color: #FCFCFD;
+}
+
+#card3_img1 {
+  margin-top: 25px;
+  width: 34px;
+  height: 34px;
+}
+
+.card3111>p {
+  position: absolute;
+  /* height: 29.37px; */
+  /* left: 16.55%; */
+  /* right: 73.81%; */
+  /* top: calc(50% - 29.37px/2 + 228.18px); */
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* line-height: 17px; */
+  display: flex;
+  align-items: center;
+  /* Color parrafo */
+  color: #777E90;
+}
+
+.card312 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card32 {
+  display: flexbox;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card32>img {
+  position: absolute;
+  width: 288.23px;
+  height: 326.62px;
 }

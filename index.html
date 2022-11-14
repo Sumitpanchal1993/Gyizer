@@ -19,68 +19,121 @@
     <main>
         <section class="left">
             <!--left nav bar section-->
-            <ul>
+            <a href="/" onclick="myFunction()"><img src="./Image/menu_white_36dp.svg" alt="" id="hamburg" ></a>
+            <ul id="myLinks">
                 <li>
-                    <a href=""><img src="./Image/round_radio_button_unchecked_white_48dp.png" alt="Home"> Link1</a>
+                    <a href=""><img src="./Image/round_radio_button_unchecked_white_48dp.png" alt="Home"></a>
                 </li>
                 <li>
-                    <a href=""><img src="./Image/round_wallet_white_48dp.png" alt="Home"> Link2</a>
+                    <a href=""><img src="./Image/round_wallet_white_48dp.png" alt="Home"></a>
                 </li>
                 <li>
-                    <a href=""><img src="./Image/round_account_balance_wallet_white_48dp.png" alt="Home"> Link3</a>
+                    <a href=""><img src="./Image/round_account_balance_wallet_white_48dp.png" alt="Home"></a>
                 </li>
                 <li>
-                    <a href=""><img src="./Image/outline_equalizer_white_48dp.png" alt="Home"> Link4</a>
+                    <a href=""><img src="./Image/outline_equalizer_white_48dp.png" alt="Home"></a>
                 </li>
                 <li>
-                    <a href=""><img src="./Image/round_expand_more_white_48dp.png" alt="Home"> Link5</a>
+                    <a href=""><img src="./Image/round_expand_more_white_48dp.png" alt="Home"></a>
                 </li>
                 <li>
-                    <a href=""><img src="./Image/round_logout_white_48dp.png" alt="Home"> Link6</a>
+                    <a href=""><img src="./Image/round_logout_white_48dp.png" alt="Home"></a>
                 </li>
             </ul>
         </section>
         <section class="right">
-            <!--right side section-->
-            <div style="display: flex; justify-content: space-between;">
-                <div>
-                    <h1><img src="./Image/avtar.png" alt=""> Hola Valentina</h1>
+            <div class="top">
+                <div class="toplhs">
+                    <div class="toplogo">
+                        <img src="./Image/whitecard.svg" alt="" id="toplogo1">
+                        <img src="./Image/bluecircle.svg" alt="img" id="toplogo2">
+                    </div>
+                    <div class="heading">
+                        <span style="font-weight: bold; font-size:larger">HOLA,</span>
+                        <span>Valentina</span>
+                    </div>
                 </div>
-                <div style="display: flex;">
-                    <ul>
-                        <li>Toggle Button<input type=" radio" name="" id="">
-                        </li>
-                        <li><img src="./Image/round_notifications_white_48dp.png" alt=""></li>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                <div class="toprhs">
+                    <div><img src="./Image/daynight.svg" alt="" id="toprhslogo1"></div>
+                    <div><img src="./Image/round_notifications_white_48dp.png" alt="" id="toprhslogo2"></div>
+                </div>
+            </div>
+            </div>
+            <div class="flex">
+                <div style="margin-top: 30px;">
+                    <div>
+                        <div class="card1">
+                            <div class="card11">
+                                <img src="./Image/Togle.svg" alt="" id="card1_img1">
+                                <div class="card111">
+                                    <h1>Activado Para</h1>
+                                    <p>Comprass </p>
+                                </div>
+
+                            </div>
+                            <div class="card12">
+                                <img src="./Image/bluecircle.svg" alt="" id="card1_img2">
+                                <img src="./Image/whitecard.svg" alt="" id="card1_img3">
+                            </div>
                         </div>
-                    </ul>
-                </div>
-
-            </div>
-            <div style="display:flex;">
-                <!-- card div -->
-                <div>
-                    <div>
-                        <img src="./Image/round_favorite_white_48dp.png" alt="">
-                        <img src="./Image/avtar.png" alt="">
-
                     </div>
-                    <div>
-                        <img src="./Image/round_favorite_white_48dp.png" alt="">
-                        <img src="./Image/pngwing.com.png" alt="" style="width: 200px;">
+                    <div class="base">
+                        <div class="card3">
+                            <div class="card31">
+                                <div class="card311">
+                                    <img src="./Image/boat.svg" alt="" id="card3_img1">
+                                    <div class="card3111">
+                                        <h1>Opensea</h1>
+                                        <p>Discover, collect, and <br>
+                                            sell extraordinary NFTs </p>
+                                    </div>
 
+                                </div>
+                                <div class="card312">
+                                    <img src="./Image/Card3.1.svg" alt="" id="card3_img3">
+                                </div>
+                            </div>
+                            <!-- <div class="card32">
+                            </div> -->
+                            <img src="./Image/girl.svg" alt="" id="card3_img2">
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img src="./Image/pngwing.com.png" alt="" style="width: 100px;">
+                <div style="z-index: -1;">
+                    <div class="card2">
+                        <div class="card21">
+                            <h2>Portafolio</h2>
+                        </div>
+                        <div class="card22">
+                            <div>
+                                <div class="card22logo"><img src="./Image/cardo.svg" alt=".">Cardano</div>
+                                <div class="rate">+0.90%</div>
+                                <div class="rate2">$345.000</div>
+                            </div>
+                            <div class="card22graph"><img src="./Image/graph1.svg" alt=""></div>
+                        </div>
+                        <div class="card22">
+                            <div>
+                                <div class="card22logo"><img src="./Image/stellar.svg" alt="."></div>
+                                <div class="rate">+0.90%</div>
+                                <div class="rate2">$345.000</div>
+                            </div>
+                            <div class="card22graph"><img src="./Image/graph2.svg" alt=""></div>
+                        </div>
+                        <div class="card22">
+                            <div>
+                                <div class="card22logo"><img src="./Image/polygon.svg" alt="."></div>
+                                <div class="rate">+0.90%</div>
+                                <div class="rate2">$345.000</div>
+                            </div>
+                            <div class="card22graph"><img src="./Image/graph3.svg" alt=""></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
     </main>
-
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
